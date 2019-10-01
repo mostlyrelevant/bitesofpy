@@ -7,5 +7,33 @@ def print_colors():
        - if 'quit' was entered for color, print 'bye' and break. 
        - if the color is not in VALID_COLORS, print 'Not a valid color' and continue.
        - otherwise print the color in lower case."""
+    """ solution
     while True:
-        pass
+        color = input('Enter a color: ').lower()
+        if color == 'quit':
+            print('bye')
+            break
+
+        if color not in VALID_COLORS:
+            print('Not a valid color')
+            continue
+
+        print(color)"""
+
+    # my code   
+    while True:
+        choice = input("Please enter a color.").lower() 
+        if choice in VALID_COLORS:
+            print(choice)
+            continue            
+        else:
+            if choice == 'quit':
+                print('bye')
+                break
+            else:
+                print('Not a valid color')
+                continue
+
+            
+
+  
