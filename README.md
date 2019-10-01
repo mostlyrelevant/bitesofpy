@@ -1,5 +1,5 @@
 # bitesofpy
 
-Working repository for working on PyBites platform.
+Working repository PyBites platform.
 
 https://codechalleng.es
