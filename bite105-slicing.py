@@ -13,21 +13,38 @@ but here is the kicker: you can use this on a list too!
 ['pybites', 'teaches', 'you', 'Python'][-2:] would gives ['you', 'Python']
 and now you know about slicing from the end as well :)
 keep enjoying our bites!
+
+
+solution
+results = []
+    for line in text.strip().splitlines():
+        line = line.lstrip()
+
+        if line[0] not in ascii_lowercase:
+            continue
+
+        words = line.split()
+        last_word_stripped = words[-1].rstrip('!.')
+        results.append(last_word_stripped)
+
+    return results
 """
 
-
+# my code
 def slice_and_dice(text: str = text) -> list:
     """Get a list of words from the passed in text.
        See the Bite description for step by step instructions"""
-    
+    results = []
+
     block = text.strip()
     for s in block.split("\n"):
         splitblock = s.lstrip()
         
-        if splitblock[0].isupper():
+        if splitblock[0].islower():
             splitword = splitblock.split(" ")
-            
+            last = splitword[-1].strip(".")
+            results.append(last.strip('!'))
+    #print(results)
+    return results
 
-
-    
-    results = []
+slice_and_dice(text)

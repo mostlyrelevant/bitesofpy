@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+MIN_DRIVING_AGE	../bite101-driving.py	/^MIN_DRIVING_AGE = 18$/;"	kind:variable	line:1
+VALID_COLORS	../bite102-colors.py	/^VALID_COLORS = ['blue', 'yellow', 'red']$/;"	kind:variable	line:1
+allowed_driving	../bite101-driving.py	/^def allowed_driving(name, age):$/;"	kind:function	line:4
+ascii_lowercase	../bite105-slicing.py	/^from string import ascii_lowercase$/;"	kind:namespace	line:1
+bite101-driving.py	../bite101-driving.py	1;"	kind:file	line:1
+bite102-colors.py	../bite102-colors.py	1;"	kind:file	line:1
+bite103-winners.py	../bite103-winners.py	1;"	kind:file	line:1
+bite104-pipe.py	../bite104-pipe.py	1;"	kind:file	line:1
+bite105-slicing.py	../bite105-slicing.py	1;"	kind:file	line:1
+games_won	../bite103-winners.py	/^games_won = dict(sara=0, bob=1, tim=5, julian=3, jim=1)$/;"	kind:variable	line:1
+print_colors	../bite102-colors.py	/^def print_colors():$/;"	kind:function	line:4
+print_game_stats	../bite103-winners.py	/^def print_game_stats(games_won=games_won):$/;"	kind:function	line:4
+slice_and_dice	../bite105-slicing.py	/^def slice_and_dice(text: str = text) -> list:$/;"	kind:function	line:19
+split_in_columns	../bite104-pipe.py	/^def split_in_columns(message=message):$/;"	kind:function	line:7
