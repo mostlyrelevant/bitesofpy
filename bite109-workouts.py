@@ -26,12 +26,22 @@ def get_workout_motd(day):
        - if day is Monday -> return 'Go train Chest+biceps'
 
        Trivia: /etc/motd is a file on Unix-like systems that contains
-       a 'message of the day' """
-    
-    
+       a 'message of the day' 
 
+
+    Solution   
+    try:
+        workout = workout_schedule[day.title()]
+    except KeyError:
+        raise KeyError('Workout does not exist.')
+    return chill if workout == rest else go_train.format(workout)     
+        """
+    
+    # My code
     day = day.title()
     if day in workout_schedule:
-        return chill if workout_schedule.values() == rest else go_train.format(workout_schedule.values())
+        return chill if workout_schedule.get(day) == rest else go_train.format(workout_schedule.get(day))
     else:
         raise KeyError
+
+
