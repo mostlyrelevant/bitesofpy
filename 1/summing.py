@@ -3,6 +3,6 @@ def sum_numbers(numbers=None):
 
     # my code
     if numbers is None:
-        numbers = range(1,100)
+        numbers = range(100)
 
     return sum(numbers)
